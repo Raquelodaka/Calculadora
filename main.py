@@ -84,13 +84,13 @@ btporc.grid(row=2,column=3)
 btporc=tkin.Button(win, text="^",command=lambda: add_campotxt('^'),width=5,font=("Verdana", 15))
 btporc.grid(row=2,column=2)
 
-btdel=tkin.Button(win, text="CE",command=lambda: lim-par(),width=5,font=("Verdana", 15))
+btdel=tkin.Button(win, text="CE",command=lambda: limpar(),width=5,font=("Verdana", 15))
 btdel.grid(row=6,column=3)
 
 btp=tkin.Button(win, text=".",command=lambda: add_campotxt('.'),width=5,font=("Verdana", 15))
 btp.grid(row=6,column=2)
 
-btigual=tkin.Button(win, text="=",command=lambda: calcu-lo(),width=5,font=("Verdana", 15))
+btigual=tkin.Button(win, text="=",command=lambda: calculo(),width=5,font=("Verdana", 15))
 btigual.grid(row=6,column=4)
 
 #não deixar maximizar ou minimizar
@@ -99,3 +99,6 @@ win.resizable(False, False)
 #tamanho = Larg x Alt
 #300 pixels X 300 pixels
 win.geometry('350x350')
+
+#Visualização da calculadora
+win.mainloop()
