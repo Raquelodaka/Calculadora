@@ -30,7 +30,7 @@ def limpar():
     campotxt=""
     campo.delete("1.0", "end")
 
-campo=tkin.Text(win,height=2,width=21,font=("Verdana", 20))
+campo=tkin.Text(win,height=2,width=26,font=("Verdana", 20))
 campo.grid(row=1, column=1, columnspan=4)
 
 #botões dos números
@@ -84,6 +84,9 @@ btporc.grid(row=2,column=3)
 btporc=tkin.Button(win, text="^",command=lambda: add_campotxt('^'),width=5,font=("Verdana", 15))
 btporc.grid(row=2,column=2)
 
+btporc=tkin.Button(win, text="AC",command=lambda: limpar(),width=5,font=("Verdana", 15))
+btporc.grid(row=2,column=1)
+
 btdel=tkin.Button(win, text="CE",command=lambda: limpar(),width=5,font=("Verdana", 15))
 btdel.grid(row=6,column=3)
 
@@ -98,7 +101,7 @@ win.resizable(False, False)
 
 #tamanho = Larg x Alt
 #300 pixels X 300 pixels
-win.geometry('350x350')
+win.geometry('350x215')
 
 #Visualização da calculadora
 win.mainloop()
